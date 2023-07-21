@@ -788,30 +788,44 @@ components:
       properties:
         fechacontable:
           type: string
+           description: 'Se ingresa la de creacion del cheque'
+          description: 'Se ingresa la de creacion del cheque'
         codBanco:
           type: string
+           description: 'Se ingresa la de creacion del cheque'
         agencia:
           type: string
+           description: 'Se ingresa la de creacion del cheque'
         cajero:
           type: string
+           description: 'Se ingresa la de creacion del cheque'
         din:
           type: string
+           description: 'Se ingresa la de creacion del cheque'
         serial:
           type: string
+           description: 'Se ingresa la de creacion del cheque'
         banco:
           type: string
+           description: 'Se ingresa la de creacion del cheque'
         oficina:
           type: string
+           description: 'Se ingresa la de creacion del cheque'
         dv:
           type: string
+           description: 'Se ingresa la de creacion del cheque'
         cuenta:
           type: string
+           description: 'Se ingresa la de creacion del cheque'
         trancode:
           type: string
+           description: 'Se ingresa la de creacion del cheque'
         monto:
           type: string
+           description: 'Se ingresa la de creacion del cheque'
         front:
           type: string
+           description: 'Se ingresa la de creacion del cheque'
       examples:
       - fechacontable: '20230702'
         codBanco: '0102'
