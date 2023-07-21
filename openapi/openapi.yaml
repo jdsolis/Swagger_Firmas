@@ -1,0 +1,177 @@
+openapi: 3.1.0
+info:
+  version: 1.0.0
+  title: Example.com
+  termsOfService: 'https://example.com/terms/'
+  contact:
+    email: contact@example.com
+    url: 'http://example.com/contact'
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
+  x-logo:
+    url: 'https://redocly.github.io/openapi-template/logo.png'
+  description:
+    $ref: ./info-description.md
+tags:
+  - name: Echo
+    description: Example echo operations.
+  - name: User
+    description: Operations about users.
+  - name: Tag
+    description: This is a tag description. 
+  - name: accountingtermfinan
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: accountinquiry
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: activitycategoryspecial
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: querymovements
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: passivetermfinan
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: checkinquiry
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: exchangeinter
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: digitalaccountopening
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: maintenancerelatedcom
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: mtdatcomplmleglpers
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: legalclientdomicile
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: basiccustomerdata
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: cardcontractcurrency
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+  - name: checkcarddetails
+    description: DESCRIPCION GENERAL DEL ACCES POINT.
+servers:
+  - url: 'https://{tenant}/api/v1'
+    variables:
+      tenant:
+        default: www
+        description: Your tenant id
+  - url: 'https://example.com/api/v1'
+paths:
+  '/users/{username}':
+    $ref: 'paths/users_{username}.yaml'
+  /echo:
+    $ref: paths/echo.yaml
+  /pathItem:
+    $ref: paths/path-item.yaml
+  /pathItemWithExamples:
+    $ref: paths/path-item-with-examples.yaml
+  /{{IPKONG}}/accountingtermfinan/IntHABA:
+    $ref: paths/accountingtermfinan/accountingtermfinan.yaml
+  /{{IPKONG}}/accountingtermfinan/IntHABB:
+    $ref: paths/accountingtermfinan/acchbba.yaml
+  /{{IPKONG}}/accountinquiry/IntB480:
+    $ref: paths/accountinquiry/b480.yaml
+  /{{IPKONG}}/activitycategoryspecial/IntWP46:
+    $ref: paths/activitycategoryspecial/WP46.yaml
+  /{{IPKONG}}/activitycategoryspecial/IntWP48:
+    $ref: paths/activitycategoryspecial/WP48.yaml
+  /{{IPKONG}}/querymovements/IntB402:
+    $ref: paths/querymovements/B402.yaml
+  /{{IPKONG}}/querymovements/IntB401:
+    $ref: paths/querymovements/B401.yaml
+  /{{IPKONG}}/passivetermfinan/IntBG61:
+    $ref: paths/passivetermfinan/BG61.yaml
+  /{{IPKONG}}/passivetermfinan/IntBQ10:
+    $ref: paths/passivetermfinan/BQ10.yaml
+  /{{IPKONG}}/passivetermfinan/IntB533:
+    $ref: paths/passivetermfinan/B533.yaml
+  /{{IPKONG}}/passivetermfinan/IntBGV3:
+    $ref: paths/passivetermfinan/BGV3.yaml
+  /{{IPKONG}}/passivetermfinan/IntB581:
+    $ref: paths/passivetermfinan/B581.yaml
+  /{{IPKONG}}/checkinquiry/IntBKV4:
+    $ref: paths/checkinquiry/BKV4.yaml
+  /{{IPKONG}}/checkinquiry/IntBQ05:
+    $ref: paths/checkinquiry/BQ05.yaml
+  /{{IPKONG}}/checkinquiry/IntBKV1:
+    $ref: paths/checkinquiry/BKV1.yaml
+  /{{IPKONG}}/checkinquiry/IntBKXA:
+    $ref: paths/checkinquiry/BKXA.yaml
+  /{{IPKONG}}/exchangeinter/IntEXRG:
+    $ref: paths/exchangeinter/EXRG.yaml
+  /{{IPKONG}}/exchangeinter/IntEXIC:
+    $ref: paths/exchangeinter/EXIC.yaml
+  /{{IPKONG}}/exchangeinter/IntEXRI:
+    $ref: paths/exchangeinter/EXRI.yaml
+  /{{IPKONG}}/exchangeinter/IntEXCV:
+    $ref: paths/exchangeinter/EXCV.yaml
+  /{{IPKONG}}/exchangeinter/IntEXID:
+    $ref: paths/exchangeinter/EXID.yaml
+  /{{IPKONG}}/digitalaccountopening/IntB030:
+    $ref: paths/digitalaccountopening/B030.yaml
+  /{{IPKONG}}/digitalaccountopening/IntB032:
+    $ref: paths/digitalaccountopening/B032.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntWP62:
+    $ref: paths/maintenancerelatedcom/WP62.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntPE98:
+    $ref: paths/maintenancerelatedcom/PE98.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntPE81:
+    $ref: paths/maintenancerelatedcom/PE81.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntPE94:
+    $ref: paths/maintenancerelatedcom/PE94.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntPEA1:
+    $ref: paths/maintenancerelatedcom/PEA1.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntPEA7:
+    $ref: paths/maintenancerelatedcom/PEA7.yaml
+  /{{IPKONG}}/maintenancerelatedcom/IntPEA8:
+    $ref: paths/maintenancerelatedcom/PEA8.yaml
+  /{{IPKONG}}/mtdatcomplmleglpers/IntPE53:
+    $ref: paths/mtdatcomplmleglpers/PE53.yaml
+  /{{IPKONG}}/mtdatcomplmleglpers/IntPE54:
+    $ref: paths/mtdatcomplmleglpers/PE54.yaml
+  /{{IPKONG}}/mtdatcomplmleglpers/IntPE55:
+    $ref: paths/mtdatcomplmleglpers/PE55.yaml
+  /{{IPKONG}}/mtdatcomplmleglpers/IntPE58:
+    $ref: paths/mtdatcomplmleglpers/PE58.yaml
+  /{{IPKONG}}/mtdatcomplmleglpers/IntPE61:
+    $ref: paths/mtdatcomplmleglpers/PE61.yaml
+  /{{IPKONG}}/mtdatcomplmleglpers/IntPE67:
+    $ref: paths/mtdatcomplmleglpers/PE67.yaml
+  /{{IPKONG}}/legalclientdomicile/IntPE60:
+    $ref: paths/legalclientdomicile/PE60.yaml
+  /{{IPKONG}}/legalclientdomicile/IntPE62:
+    $ref: paths/legalclientdomicile/PE62.yaml
+  /{{IPKONG}}/basiccustomerdata/IntPE63:
+    $ref: paths/basiccustomerdata/PE63.yaml
+  /{{IPKONG}}/basiccustomerdata/IntPE63_N:
+    $ref: paths/basiccustomerdata/PE63_N.yaml
+  /{{IPKONG}}/basiccustomerdata/IntPE68:
+    $ref: paths/basiccustomerdata/PE68.yaml
+  /{{IPKONG}}/basiccustomerdata/IntPE72:
+    $ref: paths/basiccustomerdata/PE72.yaml
+  /{{IPKONG}}/cardcontractcurrency/IntMP4Z:
+    $ref: paths/cardcontractcurrency/MP4Z.yaml
+  /{{IPKONG}}/cardcontractcurrency/IntMPK3:
+    $ref: paths/cardcontractcurrency/MPK3.yaml
+  /{{IPKONG}}/checkcarddetails/IntMP8X:
+    $ref: paths/checkcarddetails/MP8X.yaml
+  /{{IPKONG}}/checkcarddetails/IntMPCD:
+    $ref: paths/checkcarddetails/MPCD.yaml
+  /{{IPKONG}}/checkcarddetails/IntMP5C:
+    $ref: paths/checkcarddetails/MP5C.yaml
+components:
+  securitySchemes:
+    main_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: 'http://example.com/api/oauth/dialog'
+          scopes:
+            'read:users': read users info
+            'write:users': modify or remove users
+    api_key:
+      type: apiKey
+      in: header
+      name: api_key
+    basic_auth:
+      type: http
+      scheme: basic
